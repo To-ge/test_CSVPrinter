@@ -5,7 +5,9 @@ from seminar_test.CSVPrinter import CSVPrinter
 class TestCSVPrinter(unittest.TestCase):
     def setUp(self):
         path = os.getcwd()
-        print("現在のpath:"+path)
+#        print("現在のpath:"+path)
+#        top_dir = path.split("seminar_test")[0]
+#        print("top_dir" + top_dir)
         self.printer = CSVPrinter("sample2.csv")
         self.lines = self.printer.read()
 
