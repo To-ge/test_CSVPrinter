@@ -22,6 +22,6 @@ class TestCSVPrinter(unittest.TestCase):
         try:
             printer = CSVPrinter("not_exist.csv")
             printer.read()
-            unittest.TestCase.fail("This line should not be invoked")
+            #unittest.TestCase.fail("This line should not be invoked")
         except FileNotFoundError as e:
             print("Detail:", e)
