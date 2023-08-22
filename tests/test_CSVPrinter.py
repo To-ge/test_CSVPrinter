@@ -1,9 +1,11 @@
 import unittest
+import os
 from seminar_test.CSVPrinter import CSVPrinter
-
 
 class TestCSVPrinter(unittest.TestCase):
     def setUp(self):
+        path = os.getcwd()
+        print("現在のpath:"+path)
         self.printer = CSVPrinter("sample2.csv")
         self.lines = self.printer.read()
 
