@@ -3,7 +3,7 @@ from seminar_test.CSVPrinter import CSVPrinter
 
 class TestCSVPrinter(unittest.TestCase):
     def setUp(self):
-        self.printer = CSVPrinter("sample2.csv")
+        self.printer = CSVPrinter("tests/sample2.csv")
         self.lines = self.printer.read()
 
     def test_read1(self):
